@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new.css">
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="font-awesome-master/css/font-awesome.min.css">
+    <title>UNIFY</title>
+</head>
+<body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //jquery for toggle sub 
+            $('.sub-btn').click(function(){
+                $(this).next('.sub-menu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+            });
+
+            //jquery move
+            $('.menu-btn').click(function(){
+                $('.side_bar').addClass('active');
+                $('.menu-btn').css("visibility","hidden");
+            });
+
+            $('.close-btn').click(function(){
+                $('.side_bar').removeClass('active');
+                $('.menu-btn').css("visibility","visible");
+
+            });
+        });
+    </script>
+    <div class="menu-btn">
+        <i class="fa fa-bars"></i>
+    </div>
+    <div class="side_bar">
+        <div class="close-btn">
+            <i class="fa fa-times"></i>
+        </div>
+        <div class="menu">
+            <div class="item"><a href=""><i class="fa fa-home"></i>Home</a></div>
+            <div class="item"><a href=""><i class="fa fa-user"></i>Profile</a></div>
+
+            <div class="item">
+                <a class="sub-btn"><i class="fa fa-shopping-cart"></i>Shopping categories <i class="fa fa-angle-right dropdown"></i></a>
+            <div class="sub-menu">
+                <a href="#" class="sub-item"><i class="fa fa-tablet"></i> <i class="fa fa-headphones"></i> <small style="color: white;">Electronics</small></a>
+                <a href="#" class="sub-item"><i class="fa fa-female"></i><i class="fa fa-magic"></i><small style="color: white;"> Women fashion </small></a>
+                <a href="#" class="sub-item"><i class="fa fa-male"></i><small style="color: white;">Men fashion</small></a>
+                <a href="#" class="sub-item"><i class="fa fa-heartbeat"></i><small style="color: white;"> Health</small></a>
+                <a href="#" class="sub-item"><i class="fa fa-home"></i><i class="fa fa-coffee"></i><small style="color: white;"> Home and kitchen</small></a>
+                <a href="#" class="sub-item"><i class="fa fa-spoon"></i><small style="color: white;">Food</small></a>
+                <a href="#" class="sub-item"><i class="fa fa-car"></i><small style="color: white;">Vechiles</small></a>
+                <a href="#" class="sub-item"><i class="fa fa-diamond"></i> <small style="color: white;">Jellwery</small></a>
+                <a href="#" class="sub-item"><i class="fa fa-heart-o"></i><small style="color: white;"> Family</small></a>
+                <a href="#" class="sub-item"><i class="fa fa-laptop"></i> <small style="color: white;">Computers & Accessories</small></a>
+                <a href="#" class="sub-item"><i class="fa fa-gamepad"></i><small style="color: white;"> Entertainment</small></a>
+                <a href="#" class="sub-item"><i class="fa fa-soccer-ball-o"></i><small style="color: white;">Sports</small></a>
+            </div>
+            </div>
+            <div class="item"><a href=""><i class="fa fa-cog"></i>Settings</a></div>
+            <div class="item"><a href=""><i class="fa fa-info-circle"></i>About</a></div>
+           <div class="logout"> <div class="item"><a href="logout.php"><i class="fa fa-sign-out"></i>Logout</a></div></div>
+        </div>
+    </div>
+    <div class="header">
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+               <label><h4><a href="" style="font-size: 50px; font-weight: 600;">Unify</a></h4></label> 
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <i class="fa fa-shopping-bag" id="bag" style="font-size: 20px; font-weight: 600;"></i>
+            <i class="fa fa-bars" id="menu-icon" onclick="menutoggle()" style="font-size: 20px; font-weight: 600;"></i>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Give your workout <br>a new style!</h1>
+                <p>we require a new person about greatness <br> person us</p>
+                <a href="" class="btn">Explore now &#8594;</a>
+            </div>
+
+            <div class="col-2">
+                <img src="Captures/signup (3).jpg" >
+            </div>
+        </div> 
+    </div>
+    </div>
+    <div class="catergories">
+        <div class="small-container">
+            <div class="row">
+            <div class="col-3">
+                <img src="Captures/signup (2).jpg" >
+            </div>
+            <div class="col-3">
+                <img src="Captures/signup (2).jpg" >
+            </div>
+            <div class="col-3">
+                <img src="Captures/signup (2).jpg" >
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <!---freadured right-->
+
+    <div class="small-container">
+        <h2 class="title">Freatured products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="Captures/signup (2).jpg">
+                <h4>Red printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Captures/signup (2).jpg">
+                <h4>Red printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Captures/signup (2).jpg">
+                <h4>Red printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Captures/signup (2).jpg">
+                <h4>Red printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="Captures/signup (2).jpg">
+                <h4>Red printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+
+        </div>
+        <h2 class="title">Latest products</h2>
+        <div class="row">
+        <div class="col-4">
+            <img src="Captures/signup (2).jpg">
+            <h4>Red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="Captures/signup (2).jpg">
+            <h4>Red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="Captures/signup (2).jpg">
+            <h4>Red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="Captures/signup (2).jpg">
+            <h4>Red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="Captures/signup (2).jpg">
+            <h4>Red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+                <div class="col-4">
+                    <img src="Captures/signup (2).jpg">
+                    <h4>Red printed T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="Captures/signup (2).jpg">
+                    <h4>Red printed T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="Captures/signup (2).jpg">
+                    <h4>Red printed T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+               
+
+    </div>
+    </div>
+        </div>
+
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="Captures/signup (2).jpg" alt="" class="offer-img">
+                    </div>
+          
+                <div class="col-2">
+                    <p>Exclusively avaliable on Unify </p>
+                    <h1>Small band 4</h1>
+                    <small>
+                        wow this is a watch this is nice just trust us we are the best we are the unify we are the one who will help you to build your busniess thanks for choosing .unify
+                    </small><br>
+                    <a href="" class="btn">Buy now &#8594;</a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>We are the light we are the rising shinig sun we are we are ooh ooh we are we are</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="Captures/signup (2).jpg" alt="">
+                        <h3>MR right</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>We are the light we are the rising shinig sun we are we are ooh ooh we are we are</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="Captures/signup (2).jpg" alt="">
+                        <h3>MR wisdom</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>We are the light we are the rising shinig sun we are we are ooh ooh we are we are</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src="Captures/signup (2).jpg" alt="">
+                        <h3>MR Samuel</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="Captures/signup (1).jpg" alt="" width="125px" style="filter: grayscale(100%); cursor: pointer;:hover{filter: grayscale(0);}">
+                    </div>
+                    <div class="col-5">
+                        <img src="Captures/signup (1).jpg" alt=""  width="125px" style="filter: grayscale(100%); cursor: pointer;">
+                    </div>
+                    <div class="col-5">
+                        <img src="Captures/signup (1).jpg" alt=""  width="125px" style="filter: grayscale(100%); cursor: pointer;">
+                    </div>
+                    <div class="col-5">
+                        <img src="Captures/signup (1).jpg" alt=""  width="125px" style="filter: grayscale(100%); cursor: pointer;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our app</h3>
+                        <p>Downoad for android or ios</p>
+                        <div class="app-logo">
+                            <i class="fa fa-android" style="color: white; font-size: 100px;"></i>Get in Play store
+                            <i class="fa fa-apple" style="color: white; font-size: 100px;"></i>Get in App store
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                       <img src="Captures/signup (1).jpg" width="125px">
+                        <p>Our are the light of the world buy and sell with us my brother and sister</p>
+                    </div>
+               
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <li>Coupons</li>
+                    <li>Blog post</li>
+                    <li>Return policy</li>
+                    <li>Join affilicate</li>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow </h3>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Reddit</li>
+                </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright"> Copyright 2020- Unify</p>
+
+        <script>
+            var menuitems=document.getElementById("menuitems");
+
+            menuitems.style.maxHeight="0px";
+
+            function menutoggle(){
+                if( menuitems.style.maxHeight =="0px")
+                {
+                    menuitems.style.maxHeight="200px";
+                }
+                else{
+                    menuitems.style.maxHeight="0px";
+                }
+            }
+        </script>
+</body>
+</html>

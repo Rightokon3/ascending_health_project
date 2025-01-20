@@ -1,0 +1,40 @@
+.meter-container {
+    position: relative;
+    width: 200px;
+  }
+  
+  .meter {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+  }
+  
+  .indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 100px;
+    background-color: #00ff00; /* Green indicator color */
+  }
+  
+  .value {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+  }
+  
+  .message {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red; /* Red message color */
+    display: none;
+  }
+  

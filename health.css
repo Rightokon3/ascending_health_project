@@ -1,0 +1,537 @@
+:root{
+    --primary-color:#12ac8e;
+    --primary-color-dark:#0d846c;
+    --primary-color-light:#e9f7f7;
+    --secondary-color:#fb923c;
+    --text-dark:#333333;
+    --text-light:#767268;
+    --white:#ffffff;
+    --max-width:1200px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+h1{
+    color: white;
+}
+section{
+    margin-bottom: 20px;
+}
+main{
+    padding: 20px;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #fff;
+}
+.text-center{
+    text-align: center;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+p{
+    color: #ffffff;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #fb923c;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #f7dbc4;
+}
+
+.header{
+    background-image: linear-gradient(
+        to right,
+        #12ac8e,
+        #12ac8e
+    ),
+    url(Captures/doctors.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.about_header{
+    background-image: linear-gradient(
+        to right,
+        #12ac8e,
+        #12ac8e
+    ),
+    url(Captures/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.services_header{
+    background-image: linear-gradient(
+        to right,
+        #12ac8e,
+        #12ac8e
+    ),
+    url(Captures/service.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact_header{
+    background-image: linear-gradient(
+        to right,
+        #12ac8e,
+        #12ac8e
+    ),
+    url(Captures/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.header .row{
+    margin-top: 70px;
+}
+
+.catergories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+
+.rating .fa{
+    color: #ff523b;
+}
+
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+.about{
+    background: radial-gradient(#12ac8e,#12ac8e);
+    margin-top: 10px; 
+    padding: 10px 0;
+    
+}
+
+.col-2 .nurse{
+    padding: 50px;
+    margin-left: 10px;
+}
+
+small{
+    color: #555;
+}
+.services{
+    background: rgb(255, 255, 255);
+    margin-top: 10px; 
+    padding: 10px 0;
+}
+
+.contact{
+    background: white;
+    margin-top: 10px; 
+    padding: 10px 0;
+}
+.contact p{
+    color: green;
+    font-size: 20px;
+}
+.appointment{
+    background:linear-gradient(
+        to right,
+        rgba(18, 172, 18, 0.9),
+        rgba(118, 221, 132, 0.7)
+    ),;
+    margin-top: 10px; 
+    padding: 10px 0;
+}
+.blog_header{
+    background-image: linear-gradient(
+        to right,
+        #12ac8e,
+        #12ac8e
+    ),
+    url(Captures/blog.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.appointment form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.appointment input{
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--primary-color);
+    background-color: var(--primary-color-light);
+    border-radius: 5px;
+}
+.appointment button[type="submit"]{
+    width: 90px;
+}
+.login-container{
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.login-container form{
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background:radial-gradient( #ffffff, #12ac8e);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 100px;
+   
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+   
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color:  #ddfdf7;
+    color: #000;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+label{
+    margin-bottom: 8px;
+    color: #fff;
+    text-align: left;
+}
+
+
+input{
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--primary-color);
+    background-color: var(--primary-color-light);
+    border-radius: 5px;
+}
+input::placeholder{
+    color: var(--primary-color);
+
+}
+textarea{
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--primary-color);
+    background-color: var(--primary-color-light);
+    border-radius: 5px;
+}
+.we{
+    float: left;
+}
+button{
+    display: inline-block;
+    background: #fb923c;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+input[type="submit"]{
+     display: inline-block;
+     background: #000000;
+     color: #fff;
+     padding: 8px 30px;
+     border-radius: 30px;
+     transition: background 0.5s;
+}
+button:hover{
+    background: #94f59c;
+    color: #000;
+}
+.appointment button{
+    display: inline-block;
+    background: #fb923c;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.footer{
+    background:radial-gradient(#12ac8e,#12ac8e);
+    color:#fff;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color:#fff;
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4,.footer-col-5 li{
+    transition: transform 0.5s ;
+}
+.footer-col-1,.app-logo p{
+    transition: transform 0.5s ;
+}   
+
+.footer-col-1,.app-logo p:hover{
+    transform: translateX(-10px);
+}
+.footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4,.footer-col-5{
+    min-width: 250px;
+    margin-bottom: 20px;
+    transition: transform 0.5s ;
+}
+.footer-col-5{
+    transition: transform 0.5s ;
+}
+.footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4,.footer-col-5 li:hover{
+        transform: translateX(-10px);
+        cursor: pointer;
+    }
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3,.footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+li{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+
+}
+
+.app-logo i{
+    width: 140px;
+}
+
+.footer hr{
+    border: none;
+    background: white;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright{
+    text-align: center;
+}
+
+#menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+    min-height: 100px;
+    
+}
+
+
+
+.copyright{
+    text-align: center;
+}
+
+#menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+    
+    
+}
+
+@media only screen and (max-width:800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: radial-gradient(white,#12ac8e);
+        width: 50%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    #menu-icon{
+        display: block;
+        cursor: pointer;
+        min-height: 100px;
+    }
+    #bag{
+       margin-bottom: 100px;      
+    }
+}
+
+
+
+@media only screen and (max-width:800px){
+    .row{
+        text-align: center;
+    }
+    .col-2,.col-3{
+flex-basis: 100%;
+    }
+    .we{
+        float: left;
+    }
+}

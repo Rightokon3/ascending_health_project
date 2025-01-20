@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Select</title>
+  <style>
+    .custom-select {
+      position: relative;
+      display: inline-block;
+    }
+
+    .custom-select select {
+      display: none;
+    }
+
+    .select-styled {
+      display: inline-block;
+      padding: 10px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    .select-options {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      display: none;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    .select-option {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .select-option:hover {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+<div class="custom-select" id="customSelect">
+  <div class="select-styled" onclick="toggleOptions()">Select an option</div>
+  <div class="select-options" id="selectOptions">
+    <div class="select-option" onclick="selectOption(this)">Option 1</div>
+    <div class="select-option" onclick="selectOption(this)">Option 2</div>
+    <div class="select-option" onclick="selectOption(this)">Option 3</div>
+  </div>
+  <select id="realSelect" style="display:none;">
+    <option value="Option 1">Option 1</option>
+    <option value="Option 2">Option 2</option>
+    <option value="Option 3">Option 3</option>
+  </select>
+</div>
+
+<script>
+  function toggleOptions() {
+    var selectOptions = document.getElementById("selectOptions");
+    selectOptions.style.display = selectOptions.style.display === "none" ? "block" : "none";
+  }
+
+  function selectOption(option) {
+    var selectStyled = document.getElementById("customSelect").getElementsByClassName("select-styled")[0];
+    var realSelect = document.getElementById("realSelect");
+
+    selectStyled.textContent = option.textContent;
+    realSelect.value = option.textContent;
+
+    // Close the options
+    toggleOptions();
+  }
+
+  // Close the options if the user clicks outside the select
+  document.addEventListener("click", function (event) {
+    var customSelect = document.getElementById("customSelect");
+    if (!customSelect.contains(event.target)) {
+      document.getElementById("selectOptions").style.display = "none";
+    }
+  });
+</script>
+
+</body>
+</html>

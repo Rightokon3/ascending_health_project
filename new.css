@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+p{
+    color: #555;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #563434;
+}
+
+.header{
+    background:#cc5f51;
+    background-size: cover;
+}
+
+.header .row{
+    margin-top: 70px;
+}
+
+.catergories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 100%;
+}
+
+.rating{
+    text-align: center;
+}
+.rating .fa{
+    color: #ff523b;
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+p{
+    text-align: center;
+}
+h4{
+    text-align: center;
+    color: #555;
+}
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+/* jquery navigation bar */
+.side_bar{
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+}
+.side_bar.active{
+    left: 0;
+}
+
+.side_bar .menu{
+    width: 100%;
+    margin-top: 80px;
+}
+
+.side_bar .menu .item{
+    position: relative;
+    cursor: pointer;
+
+}
+
+.side_bar .menu .item a{
+    color: #fffcfc;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+}
+
+.side_bar .menu .item a:hover{
+    background:linear-gradient(to top,rgba(0, 0, 0, 0.5) 50%,rgba(0, 0, 0, 0.5) 50%),transparent;
+    transition: 0.3s ease;
+}
+.side_bar .menu .item i{
+    margin-right: 15px;
+
+}
+
+.side_bar .menu .item a .dropdown{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+
+.side_bar .menu .logout{
+justify-content: end;
+    bottom: 0;
+
+}
+.side_bar .menu .item .sub-menu{
+    background: rgba(0, 0, 0, 0.1);
+    display: none;
+
+}
+
+.side_bar .menu .item .sub-menu a{
+    padding-left: 80px;
+}
+.rotate{
+    transform: rotate(90deg);
+}
+
+.close-btn{
+    position: absolute;
+    color: #fff;
+    right: 0;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.menu-btn{
+    position: absolute;
+    color: #fdfdfd;
+    font-size: 20px;
+    margin: 25px;
+    cursor: pointer;
+    border-radius: 100px;
+
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.main{
+    width: auto;
+    background:linear-gradient(to top,rgba(0, 0, 0, 0.5) 50%,rgba(0, 0, 0, 0.5) 50%), url(Captures/signup\ \(3\).jpg);
+    background-size: cover;
+    height: 200vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    height: 109vh;
+}
+
+.main h1{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 60px;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 100px;
+    
+}
+
+.main p{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 29px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.main button:hover{
+    font-size: 10px;
+}
+
+@media (max-width: 900px){
+    .main h1{
+        font-size: 40px;
+        line-height: 60px;
+        
+    }
+
+    .main p{
+        font-size: 20px;
+        line-height: 60px;
+        
+    }
+}
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3,.footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+li{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+
+}
+
+.app-logo i{
+    width: 140px;
+}
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright{
+    text-align: center;
+}
+
+#menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+    min-height: 100px;
+    
+}
+
+@media only screen and (max-width:800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #333;
+        width: 50%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    #menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    #bag{
+        min-height: 100px;       
+    }
+}
+
+
+
+@media only screen and (max-width:800px){
+    .row{
+        text-align: center;
+    }
+    .col-2,.col-3{
+flex-basis: 100%;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Social Network</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #3b5998;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        #posts {
+            width: 60%;
+        }
+
+        #sidebar {
+            width: 30%;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #3b5998;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Simple Social Network</h1>
+    </header>
+
+    <main>
+        <div id="posts">
+            <!-- Display posts here -->
+            <div class="post">
+                <h2>User1</h2>
+                <p>This is a post about something interesting.</p>
+            </div>
+
+            <div class="post">
+                <h2>User2</h2>
+                <p>Another post here.</p>
+            </div>
+        </div>
+
+        <div id="sidebar">
+            <!-- Display user information, friend list, etc. here -->
+            <h2>My Profile</h2>
+            <p>Name: John Doe</p>
+            <p>Email: john@example.com</p>
+
+            <h2>Friend List</h2>
+            <ul>
+                <li>User1</li>
+                <li>User2</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2023 Simple Social Network
+    </footer>
+</body>
+</html>

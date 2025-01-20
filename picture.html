@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Take Picture and Upload</title>
+</head>
+<body>
+    <div id="cameraContainer">
+        <video id="video" width="640" height="480" autoplay></video>
+        <button id="snap">Snap Photo</button>
+    </div>
+    <canvas id="canvas" width="640" height="480" style="display:none;"></canvas>
+    <script>
+        // Get access to the camera and stream it to the video element
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then(function(stream) {
+                var video = document.getElementById('video');
+                video.srcObject = stream;
+                video.play();
+            })
+            .catch(function(err) {
+                console.log("An error occurred: " + err);
+            });
+
+        // Capture a snapshot from the video stream
+        document.getElementById('snap').addEventListener('click', function() {
+            var video = document.getElementById('video');
+            var canvas = document.getElementById('canvas');
+            var context = canvas.getContext('2d');
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+            // Convert canvas to base64 image data
+            var dataURL = canvas.toDataURL('image/jpeg');
+
+            // Send the image data to the server using AJAX
+
+        });
+    </script>
+</body>
+</html>

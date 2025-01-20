@@ -1,0 +1,507 @@
+*{
+    margin: 0%;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.main{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background:  #fff6e6;
+}
+body{
+    font-family: sans-serif;
+
+}
+nav{
+        background: linear-gradient(to top,#00000080 50%,#00000080  50%), transparent;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+nav ul li button{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    width: auto;
+    background-color: #000000;
+}
+nav ul li button:hover{
+    background-color: #2e2d2c;
+    color:rgb(255, 255, 255);
+    border-radius: 10px;
+    padding:1rem 3rem;
+}
+nav ul li button.active:hover{
+    background: #221c17;
+    transition: .5s;
+}
+label.logo{
+    color: rgb(44, 41, 36);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 150px;
+    font-weight: bold;
+    
+    
+}
+label.logo a{
+    text-decoration: none;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    background-color: #000000;
+    color:rgb(151, 151, 151);
+    border-radius: 10px;
+    padding:1rem 3rem;
+}
+a.active,nav ul li button.active{
+    background: #000000;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(66, 66, 66);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+   cursor: pointer; 
+   display: none;
+}
+#check{
+    display: none;
+
+}
+@media(max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 30%;
+        height: 100vh;
+        background: linear-gradient(to top,rgba(0, 0, 0, 0.5) 50%,rgba(0, 0, 0, 0.5) 50%), transparent;
+        top: 80px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #000000;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    }
+    .content{
+        width: 1500px;
+        background: linear-gradient(to top,rgba(0, 0, 0, 0.5) 50%,rgba(0, 0, 0, 0.5) 50%), url(Captures/signup\ \(1\).jpg);
+        background-size: cover;
+        height: 109vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0 5%;
+        top: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: #424144;
+        height: 100vh;
+    }
+    .we{
+        align-items: center;
+    }
+    
+    .content h1{
+        font-size: 40px;
+        color: #000000;
+            font-family: 'Times New Roman';
+            font-size: 50px;
+            padding-left: 20px;
+            margin-top: 9%;
+            letter-spacing: 2px;
+    }
+    .content span{
+        color: #645e5e;
+        font-size: 60px;
+    
+    }
+    
+    .content p{
+        font-size: 20px;
+        margin-top: 20px;
+        color: #000000;
+    }
+    
+    .content button{
+        margin-top: 40px;
+        padding: 20px 50px;
+        border: none;
+        background: #0e0e0e;
+        color: white;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor:pointer;
+        align-items: center;
+    }
+    .content button:hover{
+        transform: scale(1.09);
+        background: #161616;
+        color: #fde9dc;
+    }
+    
+  
+    
+    footer{
+        background-color: rgb(27, 27, 27);
+    }
+    footer h4{
+        text-align: center;
+        line-height: 10vh;
+    }
+    footer h4 a{
+        color:rgb(0, 0, 0);
+        font-size: 26px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        margin: 30px 0 80px;
+    }
+    footer p{
+        text-align: center;
+        line-height: 10vh;
+    }
+    
+    footer p a{
+        text-decoration: none;
+        color: #3f3d3a;
+        font-weight: bold;
+    }
+   /* Full-width input fields */
+input[type=text], input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #6b6666;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    background: #272626;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    border: none;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 20px;
+    cursor:pointer;
+    align-self: start;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  i.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 10px;
+  }
+  
+  small.psw {
+    float: right;
+    padding-top: 16px;
+
+  }
+  .we{
+    text-align: center;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+   
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    padding-top: 60px;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background:linear-gradient(to top,rgba(0, 0, 0, 0.8)50%,rgba(0, 0, 0, 0.8)50%),transparent ;
+    background-size: cover;
+    margin:5% auto 15% auto; /* 5% from the top, 15% from the bottom and 
+  centered */
+    border: 1px solid #000000;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(32, 31, 30);
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    small.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+    
+    
+  .container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+}.container .content{
+    text-align: center;
+
+}
+.container .content h3{
+    font-size: 30px;
+    color: #050505;
+}
+.container .content h3 span{
+    background: crimson;
+    color: #ffff;
+    border-radius: 5px;
+    padding: 0 15px;
+
+}
+.container .content h1{
+    font-size: 30px;
+    color: #333;
+}
+.container .content h1 {
+    color: crimson;
+
+}
+.container .content p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.container .content .btn{
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    background: #333;
+    color: #fff;
+    margin: 0 5px;
+    text-transform: capitalize;
+
+}
+.container .content .btn:hover{
+    background: rgb(0, 0, 0);
+
+}
+.form-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.5) 50%,rgba(0, 0, 0, 0.5) 50%), url(Captures/signup\ \(3\).jpg);
+    background-size: cover;
+}
+.form-container form{
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+.form-container form h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #020202;
+}
+.form-container form p{
+    color: #46423e;
+}
+.form-container form small{
+    color: #000000;
+}
+.form-container form input{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 8px 0;
+    background: none;
+    border-radius: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 13px;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+
+}
+.form-container form select option{
+    background: #fff;
+
+}
+.form-container form .form-btn{
+    background: #424040;
+    color: rgba(255, 255, 255, 0.678);
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+}
+.form-container form .form-btn:hover{
+    background: rgb(61, 57, 52);
+    color: #fff;
+
+}
+
+.form-container form p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+.form-container form  p a{
+    color: rgb(0, 0, 0);
+    
+}
+footer{
+    background-color: rgb(65, 62, 58);
+}
+footer h4{
+    text-align: center;
+    line-height: 10vh;
+}
+footer h4 a{
+    color:rgb(0, 0, 0);
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin: 30px 0 80px;
+}
+footer p{
+    text-align: center;
+    line-height: 10vh;
+}
+
+footer p a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}

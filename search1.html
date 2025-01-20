@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Search Engine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #search-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #search-input {
+            padding: 8px;
+            width: 300px;
+        }
+
+        #search-results {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .result-item {
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="search-container">
+        <input type="search" id="search-input" placeholder="Enter your search term">
+        <button onclick="search()">Search</button>
+    </div>
+    
+    <ul id="search-results"></ul>
+
+    <script>
+        function search() {
+            // In a real search engine, you would send a request to the server
+            // and handle the results dynamically. This example uses static data.
+            
+            const searchTerm = document.getElementById('search-input').value;
+            const searchResults = document.getElementById('search-results');
+
+            // Clear previous results
+            searchResults.innerHTML = '';
+
+            // Static data (replace this with your backend search logic)
+            const data = [
+                'Result 1: Lorem ipsum dolor sit amet',
+                'Result 2: Consectetur adipiscing elit',
+                'Result 3: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+                'Result 4: Ut enim ad minim veniam',
+                'Result 5: Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+            ];
+
+            // Filter and display results
+            const filteredResults = data.filter(result => result.toLowerCase().includes(searchTerm.toLowerCase()));
+
+            if (filteredResults.length === 0) {
+                searchResults.innerHTML = '<p>No results found</p>';
+            } else {
+                filteredResults.forEach(result => {
+                    const li = document.createElement('li');
+                    li.className = 'result-item';
+                    li.textContent = result;
+                    searchResults.appendChild(li);
+                });
+            }
+        }
+    </script>
+</body>
+</html>

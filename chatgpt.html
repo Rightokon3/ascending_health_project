@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .dashboard-container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Admin Dashboard</h1>
+</header>
+
+<nav>
+    <a href="#">Dashboard</a>
+    <a href="#">Users</a>
+    <a href="#">Products</a>
+    <a href="#">Settings</a>
+</nav>
+
+<div class="dashboard-container">
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+        <p>Some sidebar content</p>
+    </div>
+
+    <div class="content">
+        <h2>Main Content</h2>
+        <p>Welcome to the admin dashboard!</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Admin Dashboard</p>
+</footer>
+
+</body>
+</html>
